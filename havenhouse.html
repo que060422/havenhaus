@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HavenHaus | Home Essentials & More</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="havenhausstyle.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>Make yourself at home. Find what you need at HavenHaus.</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+
+      <a href="#home" class="brand" aria-label="HavenHaus home">
+        <span>Haven<span class="brand-highlight">Haus</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#products" class="nav-link">Shop</a>
+        <a href="#reviews" class="nav-link">Customer Reviews</a>
+      </nav>
+
+      <div class="nav-actions">
+   <button class="icon-button" id="accountButton" aria-label="My account">
+  <i class="bi bi-person"></i>
+</button>
+
+        <a href="#cart" class="cart-button" aria-label="Shopping cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+
+        <button class="icon-button menu-toggle" id="menuToggle"
+          aria-label="Toggle navigation" aria-expanded="false"
+          aria-controls="navLinks">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+  
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-container">
+    <div class="hero-content">
+
+      <span class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        YOUR HOME, YOUR WAY
+      </span>
+
+      <h1>
+        Everything Your Home Needs,
+        <span>All in One Place.</span>
+      </h1>
+
+      <p class="hero-description">
+        From everyday essentials to your next home upgrade,
+        discover practical finds that make every corner
+        feel more like home.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#products" class="button button-primary">
+          Shop Products
+          <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="#categories" class="button button-secondary">
+          Explore Categories
+        </a>
+      </div>
+
+      <div class="hero-benefits">
+        <div class="benefit-item">
+          <i class="bi bi-house-check"></i>
+          <span>For Every Home</span>
+        </div>
+
+        <span class="benefit-divider"></span>
+
+        <div class="benefit-item">
+          <i class="bi bi-grid"></i>
+          <span>Everyday Essentials</span>
+        </div>
+
+        <span class="benefit-divider"></span>
+
+        <div class="benefit-item">
+          <i class="bi bi-stars"></i>
+          <span>Find Your Favorites</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES SECTION -->
+<section class="categories-section" id="categories">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-eyebrow">EXPLORE HAVENHAUS</span>
+      <h2>Find What Your Home Needs</h2>
+      <p>
+        From everyday essentials to your next home project,
+        find everything you need in one place.
+      </p>
+    </div>
+
+    <div class="categories-grid">
+
+      <a href="#products" class="category-card"
+         data-category="building-materials">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=85"
+            alt="Building and construction supplies"
+            loading="lazy">
+        </div>
+        <div class="category-info">
+          <div>
+            <h3>Building Materials</h3>
+            <p>Paint, plywood & tools</p>
+          </div>
+          <span class="category-arrow">
+            <i class="bi bi-arrow-up-right"></i>
+          </span>
+        </div>
+      </a>
+
+      <a href="#products" class="category-card"
+         data-category="bathroom-plumbing">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=85"
+            alt="Modern bathroom fixtures"
+            loading="lazy">
+        </div>
+        <div class="category-info">
+          <div>
+            <h3>Bathroom & Plumbing</h3>
+            <p>Sinks, showers & faucets</p>
+          </div>
+          <span class="category-arrow">
+            <i class="bi bi-arrow-up-right"></i>
+          </span>
+        </div>
+      </a>
+
+      <a href="#products" class="category-card"
+         data-category="lighting-electrical">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=85"
+            alt="Decorative home lighting"
+            loading="lazy">
+        </div>
+        <div class="category-info">
+          <div>
+            <h3>Lighting & Electrical</h3>
+            <p>Bulbs, lamps & switches</p>
+          </div>
+          <span class="category-arrow">
+            <i class="bi bi-arrow-up-right"></i>
+          </span>
+        </div>
+      </a>
+
+      <a href="#products" class="category-card"
+         data-category="kitchen-essentials">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=85"
+            alt="Kitchen and household essentials"
+            loading="lazy">
+        </div>
+        <div class="category-info">
+          <div>
+            <h3>Kitchen Essentials</h3>
+            <p>Plates, utensils & cookware</p>
+          </div>
+          <span class="category-arrow">
+            <i class="bi bi-arrow-up-right"></i>
+          </span>
+        </div>
+      </a>
+
+      <a href="#products" class="category-card"
+         data-category="home-organization">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=85"
+            alt="Organized and comfortable home interior"
+            loading="lazy">
+        </div>
+        <div class="category-info">
+          <div>
+            <h3>Home Organization</h3>
+            <p>Storage & organizers</p>
+          </div>
+          <span class="category-arrow">
+            <i class="bi bi-arrow-up-right"></i>
+          </span>
+        </div>
+      </a>
+
+      <a href="#products" class="category-card"
+         data-category="cleaning-supplies">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=85"
+            alt="Home cleaning supplies"
+            loading="lazy">
+        </div>
+        <div class="category-info">
+          <div>
+            <h3>Cleaning Supplies</h3>
+            <p>Mops, brushes & cleaners</p>
+          </div>
+          <span class="category-arrow">
+            <i class="bi bi-arrow-up-right"></i>
+          </span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="categories-footer">
+      <p>Everything for a home that feels like yours.</p>
+      <a href="#products" class="view-all-link">
+        View all products <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="products-section" id="products">
+  <div class="container">
+
+    <div class="products-heading">
+      <div>
+        <span class="section-eyebrow">HANDPICKED FOR YOUR HOME</span>
+        <h2>Featured Products</h2>
+        <p>Practical finds for every corner of your home.</p>
+      </div>
+
+      <span class="products-count" id="productsCount">
+        8 products
+      </span>
+    </div>
+
+    <!-- Search and sorting -->
+    <div class="product-toolbar">
+      <div class="product-search">
+        <i class="bi bi-search"></i>
+        <input
+          type="search"
+          id="productSearch"
+          placeholder="Search products..."
+          aria-label="Search products">
+      </div>
+
+      <label class="sort-control">
+        <span>Sort by</span>
+        <select id="productSort" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+          <option value="name">Name: A–Z</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Category filters -->
+    <div class="product-filters" id="productFilters"
+         aria-label="Filter products by category">
+      <button class="filter-button active" data-filter="all">
+        All Products
+      </button>
+      <button class="filter-button" data-filter="building-materials">
+        Building Materials
+      </button>
+      <button class="filter-button" data-filter="bathroom-plumbing">
+        Bathroom & Plumbing
+      </button>
+      <button class="filter-button" data-filter="lighting-electrical">
+        Lighting & Electrical
+      </button>
+      <button class="filter-button" data-filter="kitchen-essentials">
+        Kitchen Essentials
+      </button>
+      <button class="filter-button" data-filter="home-organization">
+        Home Organization
+      </button>
+      <button class="filter-button" data-filter="cleaning-supplies">
+        Cleaning Supplies
+      </button>
+    </div>
+
+    <!-- Products are rendered by JavaScript -->
+    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="products-empty" id="productsEmpty" hidden>
+      <i class="bi bi-search"></i>
+      <h3>No products found</h3>
+      <p>Try another search or choose a different category.</p>
+      <button class="reset-filters" id="resetFilters">
+        Clear filters
+      </button>
+    </div>
+
+    <div class="products-bottom">
+      <p>Showing demo products for the HavenHaus prototype.</p>
+      <button class="view-all-products" id="viewAllProducts">
+        View all products <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- DEMO CART DRAWER -->
+<div class="cart-backdrop" id="cartBackdrop"></div>
+
+<aside class="cart-drawer" id="cartDrawer"
+       aria-label="Shopping cart"
+       aria-hidden="true">
+  <div class="cart-header">
+    <div>
+      <span class="section-eyebrow">YOUR SHOPPING BAG</span>
+      <h2>Your Cart <span id="drawerCartCount">(0)</span></h2>
+    </div>
+    <button class="icon-button" id="closeCart" aria-label="Close cart">
+      <i class="bi bi-x-lg"></i>
+    </button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-empty" id="cartEmpty">
+    <i class="bi bi-bag"></i>
+    <h3>Your cart is empty</h3>
+    <p>Find something useful for your home.</p>
+    <button class="button button-primary" id="continueShopping">
+      Continue shopping
+    </button>
+  </div>
+
+  <div class="cart-footer" id="cartFooter" hidden>
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">₱0.00</strong>
+    </div>
+    <p>Demo cart only. Checkout and payments are not connected.</p>
+    <button class="button button-primary cart-checkout" id="demoCheckout">
+      Proceed to Checkout <i class="bi bi-arrow-right"></i>
+    </button>
+  </div>
+</aside>
+
+<!-- CUSTOMER REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="reviews-container">
+
+    <div class="reviews-heading">
+      <span class="section-eyebrow">CUSTOMER LOVE</span>
+      <h2>What Our Customers Say</h2>
+      <p>
+        Real comfort starts with the little things.
+        See what our customers think about HavenHaus.
+      </p>
+
+      <div class="reviews-rating">
+        <span class="rating-number">4.8</span>
+        <div class="rating-details">
+          <div class="rating-stars" aria-label="5 out of 5 stars">
+            ★★★★★
+          </div>
+          <span>Sample rating for design preview</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-slider">
+
+      <button class="review-arrow prev-review"
+        type="button" aria-label="Previous reviews">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <div class="reviews-viewport">
+        <div class="reviews-track" id="reviewsTrack">
+
+          <!-- Review 1 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "I found practical essentials for my home.
+              The clean product layout makes browsing easy!"
+            </p>
+            <div class="review-customer">
+              <div class="customer-avatar">AM</div>
+              <div>
+                <h3>Alex M.</h3>
+                <span>Sample customer</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "I love how easy it is to explore different
+              categories and find items for every room."
+            </p>
+            <div class="review-customer">
+              <div class="customer-avatar">JR</div>
+              <div>
+                <h3>Jamie R.</h3>
+                <span>Sample customer</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Simple, convenient, and full of useful
+              home essentials. A nice shopping experience!"
+            </p>
+            <div class="review-customer">
+              <div class="customer-avatar">SL</div>
+              <div>
+                <h3>Sam L.</h3>
+                <span>Sample customer</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 4 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "The organized categories make it easier
+              to find what I need for home improvement."
+            </p>
+            <div class="review-customer">
+              <div class="customer-avatar">KC</div>
+              <div>
+                <h3>Kris C.</h3>
+                <span>Sample customer</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <button class="review-arrow next-review"
+        type="button" aria-label="Next reviews">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+
+    </div>
+
+    <div class="reviews-dots" id="reviewsDots"
+      aria-label="Choose review slide"></div>
+
+    <p class="reviews-demo-note">
+      Reviews shown are fictional placeholders for this portfolio prototype.
+    </p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <a href="#home" class="footer-logo">
+        <span>Haven<span class="logo-highlight">Haus</span></span>
+      </a>
+
+      <p>
+        Thoughtful essentials for a better home.
+        Discover practical finds that make every
+        corner feel a little more like you.
+      </p>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="#" aria-label="TikTok">
+          <i class="bi bi-tiktok"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#reviews">Customer Reviews</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Support -->
+    <div class="footer-column">
+      <h3>Customer Support</h3>
+      <ul>
+        <li><a href="#footer">Contact Us</a></li>
+        <li><a href="#footer">FAQs</a></li>
+        <li><a href="#footer">Shipping & Returns</a></li>
+        <li><a href="#footer">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Stay in the Loop</h3>
+      <p>
+        Get updates on new arrivals and home inspiration.
+      </p>
+
+      <form class="newsletter-form" id="newsletterForm">
+        <input
+          type="email"
+          id="newsletterEmail"
+          placeholder="Enter your email"
+          aria-label="Email address"
+          required
+        >
+        <button type="submit" aria-label="Subscribe">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </form>
+
+      <p class="newsletter-message" id="newsletterMessage"
+        aria-live="polite"></p>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© <span id="footerYear"></span> HavenHaus. Portfolio demo project.</p>
+
+    <a href="#home" class="back-to-top">
+      Back to top <i class="bi bi-arrow-up"></i>
+    </a>
+  </div>
+</footer>
+
+  </main>
+
+  <script src="havenhaus.js"></script>
+</body>
+</html>
